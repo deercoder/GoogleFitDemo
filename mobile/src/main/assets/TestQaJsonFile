@@ -1,0 +1,92 @@
+[{
+  "questionBody": "你这个月做了产前检查了吗?",
+  "firstAnswer": "有",
+  "secondAnswer": "没有",
+  "category": "1"
+
+}, {
+  "questionBody": "你的心情好吗？",
+  "firstAnswer": "好",
+  "secondAnswer": "不好",
+  "category": "2"
+}, {
+  "questionBody": "你的胃口好吗?",
+  "firstAnswer": "好",
+  "secondAnswer": "不好",
+  "category": "3"
+}, {
+  "questionBody": "你会感觉恶心，呕吐吗?",
+  "firstAnswer": "会",
+  "secondAnswer": "不会",
+  "category": "3"
+}, {
+  "questionBody": "你的食量有变化吗?",
+  "firstAnswer": "有",
+  "secondAnswer": "没有",
+  "category": "3"
+}, {
+  "questionBody": "平常你会经常运动吗?",
+  "firstAnswer": "经常",
+  "secondAnswer": "不经常",
+  "category": "4"
+}, {
+  "questionBody": "你有没有患有疾病?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "category": "4"
+}, {
+  "questionBody": "你晚上会发恶梦吗?",
+  "firstAnswer": "会",
+  "secondAnswer": "不会",
+  "category": "5"
+}, {
+  "questionBody": "你晚上会经常起夜吗?",
+  "firstAnswer": "会",
+  "secondAnswer": "不会",
+  "category": "5"
+}, {
+  "questionBody": "你经常感觉到疲倦，想睡觉吗？",
+  "firstAnswer": "经常",
+  "secondAnswer": "不经常",
+  "category": "5"
+}, {
+  "questionBody": "你会经常做梦吗?",
+  "firstAnswer": "经常",
+  "secondAnswer": "不经常",
+  "category": "5"
+}, {
+  "questionBody": "你身体有没有出现出血的症状?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "category": "6"
+}, {
+  "questionBody": "你身体有没有出现不适?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "category": "6"
+}, {
+  "questionBody": "你有感觉到胎动吗?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "category": "6"
+}, {
+  "questionBody": "怀孕期间你有服用任何药物吗?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "category": "7"
+}, {
+  "questionBody": "你有喝酒吗?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "catigory": "7"
+}, {
+  "questionBody": "你有吸烟吗?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "category": "7"
+}, {
+  "questionBody": "你进行性生活频繁吗?",
+  "firstAnswer": "有 ",
+  "secondAnswer": "没有",
+  "category": "7"
+}]

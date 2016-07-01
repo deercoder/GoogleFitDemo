@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/user_age"
+            android:id="@+id/textView2" />
+
+        <!--<EditText-->
+            <!--android:layout_width="260dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:hint="yyyy/mm/dd"-->
+            <!--android:inputType="date"-->
+        <!--android:hint="input your height here"-->
+        <!--android:hint="input your age here"-->
+        <!--android:hint="input your baby days"-->
+        <!--android:hint="age"-->
+
+        <!--android:id="@+id/age_input_editview" />-->
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:id="@+id/age_input_editview" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/user_height"
+
+            android:id="@+id/textView3"
+            />
+
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+
+            android:inputType="number"
+            android:id="@+id/height_input_editview" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/user_weight"
+            android:id="@+id/textView4" />
+
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:id="@+id/weight_input_editview" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/user_baby_day"
+            android:id="@+id/textView5" />
+
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+
+            android:id="@+id/babyday_input_editview" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:id="@+id/settingResult" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:inputType="number"
+            android:text=""
+            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/setting_submit_button"
+
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="confirm"
+            android:id="@+id/setting_submit_confirm_button"
+
+             />
+    </LinearLayout>
+
+</RelativeLayout>

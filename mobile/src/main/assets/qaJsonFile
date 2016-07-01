@@ -1,0 +1,41 @@
+[{
+    "questionBody": "你这个月做了产前检查了吗?",
+    "firstAnswer": "有",
+    "secondAnswer": "没有",
+
+},
+{
+    "questionBody": "你有产假计划吗?",
+      "firstAnswer": "有",
+      "secondAnswer": "没有",
+},
+{
+    "questionBody": "你知道自己的预产期吗?",
+      "firstAnswer": "有",
+      "secondAnswer": "没有",
+},
+{
+    "questionBody": "你有学习怀孕课程吗?",
+      "firstAnswer": "有",
+      "secondAnswer": "没有",
+},
+{
+    "questionBody": "怀孕期间你的心情有变化吗?",
+      "firstAnswer": "有",
+      "secondAnswer": "没有",
+},
+{
+     "questionBody": "你的心情好吗?",
+       "firstAnswer": "好",
+       "secondAnswer": "不好",
+ },
+ {
+      "questionBody": "你的饮食习惯好吗?",
+     "firstAnswer": "好",
+        "secondAnswer": "不好",
+  },
+  {
+       "questionBody": "你的体重有变化吗?",
+         "firstAnswer": "有",
+         "secondAnswer": "没有",
+   }]

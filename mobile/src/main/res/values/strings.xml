@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">YiYiGuanAi</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="user_age">your age</string>
+    your weight
+    <string name="user_height">your height(cm)</string>
+    <string name="user_weight">your weight(kg)</string>
+    <string name="user_baby_day">due day</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
