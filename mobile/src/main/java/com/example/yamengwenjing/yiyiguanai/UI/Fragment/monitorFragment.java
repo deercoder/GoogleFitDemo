@@ -185,14 +185,17 @@ public class monitorFragment extends Fragment {
         int goal = 3000;
         double rate = mTotalColorie * 1.0 / goal;
 
-        if (rate >= 1) {
-            result += "(很好! 您已经完成目标, 继续保持!)";
+        if (rate > 1.5) {
+            result += "(警告: 您已经超过正常运动范围,作为孕妇请适当休息,保证胎儿健康!)";
+        }
+        else if (rate >= 1) {
+            result += "(很好! 您已经完成目标, 继续保持, 保证休息!)";
         }
         else if (rate > 0.5) {
-            result += "(您已经完成一半以上的目标, 继续加油!)";
+            result += "(您已经完成一半以上的目标, 继续加油, 适当运动!)";
         }
         else if (rate > 0.3) {
-            result += "(您还未达到一半目标, 请多运动减少卡路里!)";
+            result += "(您还未达到一半目标, 多运动减少卡路里,有助于胎儿发育!)";
         }
         else if (rate < 0.3) {
             result += "(您的运动量严重不足, 请多运动!)";
@@ -206,10 +209,13 @@ public class monitorFragment extends Fragment {
         Log.e("DDDD", ""+ mTotalStepCount);
         Log.e("DDDD", result);
 
-        int goal = 2000;
-        double rate = mTotalColorie * 1.0 / goal;
+        int goal = 1000;
+        double rate = mTotalStepCount * 1.0 / goal;
 
-        if (rate >= 1) {
+        if (rate > 1.5) {
+            result += "(警告: 您已经超过正常运动范围,作为孕妇请适当休息,保证胎儿健康!)";
+        }
+        else if (rate >= 1) {
             result += "(很好! 您已经完成目标, 继续保持!)";
         }
         else if (rate > 0.5) {
