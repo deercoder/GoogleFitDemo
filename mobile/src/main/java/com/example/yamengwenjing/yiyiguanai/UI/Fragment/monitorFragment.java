@@ -18,6 +18,9 @@ import android.widget.Toast;
 
 import com.example.yamengwenjing.yiyiguanai.MainActivity;
 import com.example.yamengwenjing.yiyiguanai.R;
+import com.example.yamengwenjing.yiyiguanai.dbPackage.ActivityDatabaseHelper;
+import com.example.yamengwenjing.yiyiguanai.dbPackage.ActivityInfoDbEntity;
+import com.example.yamengwenjing.yiyiguanai.dbPackage.DatabaseHelper;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import android.content.Intent;
@@ -49,7 +52,9 @@ import com.google.android.gms.fitness.request.DataReadRequest;
 import com.google.android.gms.fitness.request.DataUpdateRequest;
 import com.google.android.gms.fitness.result.DailyTotalResult;
 import com.google.android.gms.fitness.result.DataReadResult;
+import com.j256.ormlite.table.TableUtils;
 
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -143,6 +148,7 @@ public class monitorFragment extends Fragment {
 
     }
 
+
     private void initEvent() {
         monitorSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -156,6 +162,7 @@ public class monitorFragment extends Fragment {
                     setStatisticViewContent();
                 }
 
+                testDb(getContext());
 
             }
 
@@ -166,6 +173,48 @@ public class monitorFragment extends Fragment {
         });
     }
 
+    public void testDb(Context context) {
+
+        ActivityDatabaseHelper helper = ActivityDatabaseHelper.getHelper(context);
+        long time = System.currentTimeMillis();
+        try {
+
+            TableUtils.clearTable(helper.getConnectionSource(), ActivityInfoDbEntity.class);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+       long time2 =System.currentTimeMillis();
+        Log.e("TAG","TIME COMSUMING "+ (time2-time));
+        ActivityInfoDbEntity test1 = new ActivityInfoDbEntity("111","acc");
+
+        try {
+            helper.getSensorDbEntityDao().create(test1);
+            ActivityInfoDbEntity test2 = new ActivityInfoDbEntity("222","acc");
+            helper.getSensorDbEntityDao().create(test2);
+            ActivityInfoDbEntity test3 = new ActivityInfoDbEntity("333","acc");
+            helper.getSensorDbEntityDao().create(test3);
+
+            //testList();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        time = System.currentTimeMillis();
+
+        for(int i = 0 ;i <=1000;i++){
+           try {
+                helper.getSensorDbEntityDao().create(test1);
+            } catch (SQLException e) {
+               e.printStackTrace();
+            }
+        }
+
+        time2 =System.currentTimeMillis();
+        Log.e("TAG","TIME COMSUMING "+ (time2-time));
+
+        helper.close();
+
+    }
 
     private void setStatisticViewContent() {
 

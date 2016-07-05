@@ -14,3 +14,4 @@ gradlew.bat
 publicsharedkey/
 qasystem/
 settings.gradle
+mobile/src/main/gen/
